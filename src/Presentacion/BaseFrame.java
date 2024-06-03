@@ -33,7 +33,7 @@ public abstract class BaseFrame extends JFrame {
         buttonPanel.setBackground(new Color(203, 187, 145));
 
         // Agregar botones
-        String[] buttonLabels = {"Datos", "Piezas", "Ofertas", "Compras", "Compradores", "Historias", "Subastas"};
+        String[] buttonLabels = {"Datos", "Piezas", "Grafico Ventas", "Compras", "Compradores", "Historias", "Subastas"};
         for (String label : buttonLabels) {
             JButton button = new JButton(label);
             button.setFont(new Font("Lato", Font.BOLD, 12));
@@ -66,6 +66,10 @@ public abstract class BaseFrame extends JFrame {
             case "Datos" -> transitionTo(new FrameDatos(administrador));
             case "Piezas" -> transitionTo(new FramePiezas(administrador));
             case "Compradores" -> transitionTo(new FrameCompradores(administrador));
+            case "Grafico Ventas" -> transitionTo(new FrameGrafico(administrador));
+            case "Historias" -> transitionTo(new FrameHistorias(administrador)); 
+            case "Subastas" -> transitionTo(new FrameSubastas(administrador));
+            case "Compras" -> transitionTo(new FrameCompras(administrador));
             
             
             

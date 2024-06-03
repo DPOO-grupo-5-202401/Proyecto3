@@ -23,7 +23,7 @@ public class AdminIntro extends BaseFrame {
         infoPanel.add(Box.createVerticalStrut(50));  // Espaciador vertical
         infoPanel.add(welcomeLabel);
 
-        JLabel secondLabel = new JLabel("Panel de Administración");
+        JLabel secondLabel = new JLabel("Selecciona una opcion para continuar");
         secondLabel.setFont(new Font("Serif", Font.PLAIN, 24));  // Asegúrate de que la fuente es reconocida
         secondLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         infoPanel.add(secondLabel);
