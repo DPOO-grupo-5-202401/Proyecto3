@@ -95,13 +95,15 @@ public class LoginFrame extends JFrame implements ActionListener {
         String password = new String(passwordField.getPassword());
 
         if (username.equals("Admin1") && password.equals("Admin1")) {
-        	new MainControllerAdmin();  // Pasar la instancia actual
+        	new MainControllerAdmin();  
         	this.dispose();
-        }// else if (username.equals("Empleado1") && password.equals("Empleado1")) {
-           // new EmpleadoIntro(LoginFrame.this);
-        //} else if (username.equals("Comprador1") && password.equals("Comprador1")) {
-          //  new CompradorIntro(LoginFrame.this);
-        //}
+        } else if (username.equals("Empleado1") && password.equals("Empleado1")) {
+        	new MainControllerAdmin();  
+        	this.dispose();
+        } else if (username.equals("Comprador1") && password.equals("Comprador1")) {
+        	new MainControllerAdmin();  
+        	this.dispose();
+        }
         else {
             JOptionPane.showMessageDialog(LoginFrame.this, "Credenciales incorrectas", "Error", JOptionPane.ERROR_MESSAGE);
         }
